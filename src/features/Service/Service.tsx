@@ -5,7 +5,7 @@ import ContentBlock from "./components/ContentBlock";
 
 export default function Service() {
   return (
-    <div
+    <section
       id="services"
       className="relative p-3 flex flex-col gap-10 overflow-hidden xl:flex-row xl:mt-[50px]"
     >
@@ -26,6 +26,6 @@ export default function Service() {
       >
         <Button>ЗАМОВИТИ ПРОЄКТ</Button>
       </motion.div>
-    </div>
+    </section>
   );
 }

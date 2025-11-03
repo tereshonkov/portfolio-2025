@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <div
+    <section
       id="home"
       className="relative py-3 px-1.5 xl:p-[21px] w-full max-h-screen"
     >
@@ -43,6 +43,6 @@ export default function Hero() {
           Створюю сучасні рішення для ВАС
         </motion.p>
       </div>
-    </div>
+    </section>
   );
 }
