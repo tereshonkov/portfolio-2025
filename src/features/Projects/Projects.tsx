@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import Card from "./components/Card";
+import Accardion from "./components/Accardion";
+import AccardionItem from "./components/AccardionItem";
 
 export default function Projects() {
   return (
@@ -16,7 +18,30 @@ export default function Projects() {
       >
         ПРОЄКТИ
       </motion.h2>
-      <Card />
+      <Card cardName="card-1-1">
+        <Accardion title="Функціонал UX">
+          <AccardionItem text="Аккордеони та слайдери з анімаціями для інтерактивного UX" />
+        </Accardion>
+        <Accardion title="Технології">
+          <AccardionItem text="Аккордеони та слайдери з анімаціями для інтерактивного UX" />
+        </Accardion>
+        <Accardion title="Коментар замовника">
+          <AccardionItem text="Аккордеони та слайдери з анімаціями для інтерактивного UX" />
+        </Accardion>
+      </Card>
+      <h4 className="text-(--secondary) text-[32px] font-bold text-center">
+        Web сайт це інструмент, який допомагає вашому бренду рости, виділятися
+        та викликати довіру.
+      </h4>
+
+      <picture>
+        <img
+          src="/projects/projects-bg.png"
+          alt="background"
+          className="absolute top-[600px] left-0 w-full object-cover"
+        />
+      </picture>
+      <Card cardName="card-2-1" />
     </section>
   );
 }
