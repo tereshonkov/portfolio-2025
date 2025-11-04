@@ -1,35 +1,12 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 
 export default function Hero() {
-  const [loaded, setLoaded] = useState(false);
   return (
     <section
       id="home"
       className="relative py-3 px-1.5 xl:p-[21px] w-full max-h-screen"
     >
-      {!loaded && (
-        <img
-          src="/hero.webp"
-          alt="placeholder image"
-          className="w-full h-full object-cover 2xl:max-h-[850px]"
-        />
-      )}
-
       <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="none"
-        className={`w-full h-full rounded-lg object-cover 2xl:max-h-[850px] ${
-          loaded ? "opacity-100" : "opacity-0"
-        } transition-opacity duration-700`}
-        onLoadedData={() => setLoaded(true)}
-      >
-        <source src="/hero.mp4" type="video/mp4" />
-      </video>
-      {/* <video
         autoPlay
         loop
         muted
@@ -38,7 +15,7 @@ export default function Hero() {
         className="w-full h-full rounded-lg object-cover 2xl:max-h-[850px]"
       >
         <source src="/hero.mp4" type="video/mp4" />
-      </video> */}
+      </video>
 
       <div className="absolute inset-0 flex flex-col gap-4 items-center justify-center">
         <motion.h1
