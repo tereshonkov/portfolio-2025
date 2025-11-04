@@ -27,6 +27,7 @@ export default function Projects() {
           cardName="card-1-1"
           cardNameTwo="card-1-2"
           cardNameThree="card-1-3"
+          link="https://www.t-mebel.com.ua/"
         >
           <Accardion title="Функціонал UX">
             <AccardionItem text="Мультимовність сайту та адміністративна панель для перегляду статистики та модерування повідомлень" />
@@ -67,6 +68,7 @@ export default function Projects() {
           cardName="card-2-1"
           cardNameTwo="card-2-2"
           cardNameThree="card-2-3"
+          link="https://bogdan-poject.vercel.app/"
         >
           <Accardion title="Функціонал UX">
             <AccardionItem text="Аккордеони та слайдери з анімаціями для інтерактивного UX" />

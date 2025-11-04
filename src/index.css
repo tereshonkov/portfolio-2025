@@ -7,3 +7,7 @@
   --bg-secondary: #06112B;
   --bg-btn: #59CECF;
 }
+
+html {
+  scroll-behavior: smooth;
+}

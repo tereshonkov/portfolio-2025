@@ -5,11 +5,13 @@ export default function Card({
   cardName,
   cardNameTwo,
   cardNameThree,
+  link,
   children,
 }: {
   cardName?: string;
   cardNameTwo?: string;
   cardNameThree?: string;
+  link: string;
   children: React.ReactNode;
 }) {
   return (
@@ -23,7 +25,7 @@ export default function Card({
         <h3 className="font-bold text-[26px]">Web-сайт для меблевої фірми</h3>
         {children}
         <div className="flex justify-center mt-4">
-          <Button>ПЕРЕГЛЯНУТИ</Button>
+          <Button link={link}>ПЕРЕГЛЯНУТИ</Button>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <div className="relative flex flex-col gap-[92px] py-[50px] px-3 md:px-[25px]">
+    <div id="contacts" className="relative flex flex-col gap-[92px] py-[50px] px-3 md:px-[25px]">
       <motion.h2
         initial={{ opacity: 0, y: 150 }}
         whileInView={{ opacity: 1, y: 0 }}
