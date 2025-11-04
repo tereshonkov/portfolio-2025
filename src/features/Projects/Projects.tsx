@@ -31,7 +31,7 @@ export default function Projects() {
           <AccardionItem text="Дякую за роботу, сайт вийшов чудовий, все працює як треба!" />
         </Accardion>
       </Card>
-      <h4 className="text-(--secondary) text-[32px] font-bold text-center xl:text-[52px]">
+      <h4 className="text-(--secondary) text-[32px] font-bold text-center xl:text-[52px] max-w-[1100px] z-10">
         Web сайт це інструмент, який допомагає вашому бренду рости, виділятися
         та викликати довіру.
       </h4>
@@ -40,7 +40,7 @@ export default function Projects() {
         <img
           src="/projects/projects-bg.png"
           alt="background"
-          className="absolute top-[600px] left-0 w-full object-cover md:w-[500px]"
+          className="absolute top-[600px] left-0 w-full object-cover md:w-[500px] xl:top-[900px]"
         />
       </picture>
       <Card cardName="card-2-1" cardNameTwo="card-2-2" cardNameThree="card-2-3">
