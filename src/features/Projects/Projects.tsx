@@ -6,10 +6,10 @@ import AccardionItem from "./components/AccardionItem";
 export default function Projects() {
   return (
     <section
-      className="relative py-[57px] px-2 flex flex-col gap-8 items-center"
+      className="relative py-[57px] px-2 flex flex-col gap-8 items-center xl:gap-40"
       id="projects"
     >
-      <div className="absolute top-[120px] left-1/2 -translate-x-1/2 bg-white rounded-full w-[138px] h-[141px] blur-[100px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px]"></div>
+      <div className="absolute top-[120px] left-1/2 -translate-x-1/2 bg-white rounded-full w-[138px] h-[141px] blur-[100px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] xl:blur-[200px] xl:w-[400px] xl:h-[400px]"></div>
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -18,18 +18,20 @@ export default function Projects() {
       >
         ПРОЄКТИ
       </motion.h2>
-      <Card cardName="card-1-1">
+      <Card cardName="card-1-1" cardNameTwo="card-1-2" cardNameThree="card-1-3">
         <Accardion title="Функціонал UX">
+          <AccardionItem text="Мультимовність сайту та адміністративна панель для перегляду статистики та модерування повідомлень" />
+          <AccardionItem text="Повідомлення з сайту надходять в адмін-панель і Telegram" />
           <AccardionItem text="Аккордеони та слайдери з анімаціями для інтерактивного UX" />
         </Accardion>
         <Accardion title="Технології">
-          <AccardionItem text="Аккордеони та слайдери з анімаціями для інтерактивного UX" />
+          <AccardionItem text="Next.js, Nest.js, i18next, TypeScript, CSS" />
         </Accardion>
         <Accardion title="Коментар замовника">
-          <AccardionItem text="Аккордеони та слайдери з анімаціями для інтерактивного UX" />
+          <AccardionItem text="Дякую за роботу, сайт вийшов чудовий, все працює як треба!" />
         </Accardion>
       </Card>
-      <h4 className="text-(--secondary) text-[32px] font-bold text-center">
+      <h4 className="text-(--secondary) text-[32px] font-bold text-center xl:text-[52px]">
         Web сайт це інструмент, який допомагає вашому бренду рости, виділятися
         та викликати довіру.
       </h4>
@@ -38,18 +40,18 @@ export default function Projects() {
         <img
           src="/projects/projects-bg.png"
           alt="background"
-          className="absolute top-[600px] left-0 w-full object-cover"
+          className="absolute top-[600px] left-0 w-full object-cover md:w-[500px]"
         />
       </picture>
-      <Card cardName="card-2-1">
+      <Card cardName="card-2-1" cardNameTwo="card-2-2" cardNameThree="card-2-3">
         <Accardion title="Функціонал UX">
           <AccardionItem text="Аккордеони та слайдери з анімаціями для інтерактивного UX" />
         </Accardion>
         <Accardion title="Технології">
-          <AccardionItem text="Аккордеони та слайдери з анімаціями для інтерактивного UX" />
+          <AccardionItem text="Next.js, Embla Carousel, TypeScript, Tailwind CSS" />
         </Accardion>
         <Accardion title="Коментар замовника">
-          <AccardionItem text="Аккордеони та слайдери з анімаціями для інтерактивного UX" />
+          <AccardionItem text="Комунікація була швидкою, зрозумілою та конструктивною. Результатом задоволений — код чистий, адаптив працює, проєкт запущено без проблем. Рекомендую до співпраці як відповідального й технічно грамотного спеціаліста." />
         </Accardion>
       </Card>
     </section>

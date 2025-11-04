@@ -19,7 +19,7 @@ export default function Accardion({ title, children }: { title: string, children
               className={`w-4 h-4` + (open ? " transform rotate-180" : "")}
             />
           </DisclosureButton>
-          <DisclosurePanel className={"flex items-center gap-2 p-3 mt-2"}>{children}</DisclosurePanel>
+          <DisclosurePanel className={"flex flex-col justify-center gap-2 p-3 mt-2"}>{children}</DisclosurePanel>
         </>
       )}
     </Disclosure>
