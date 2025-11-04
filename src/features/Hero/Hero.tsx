@@ -11,7 +11,7 @@ export default function Hero() {
         loop
         muted
         playsInline
-        preload="auto"
+        preload="none"
         className="w-full h-full rounded-lg object-cover 2xl:max-h-[850px]"
       >
         <source src="/hero.webm" type="video/webm" />
