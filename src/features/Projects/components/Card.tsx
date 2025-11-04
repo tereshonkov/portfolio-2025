@@ -2,7 +2,7 @@ import Button from "../../../components/Button/Button";
 
 export default function Card({ cardName, children }: { cardName?: string, children: React.ReactNode }) {
   return (
-    <div className="flex flex-col gap-8 p-2.5 border border-(--bg-btn) rounded-[20px]">
+    <div className="relative z-50 flex flex-col gap-8 p-2.5 border border-(--bg-btn) rounded-[20px]">
       <div className="relative w-[332px] h-[250px]">
         <picture>
           <img src={`/projects/${cardName}.png`} alt="photo web-site macbook" />

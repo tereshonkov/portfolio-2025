@@ -41,7 +41,17 @@ export default function Projects() {
           className="absolute top-[600px] left-0 w-full object-cover"
         />
       </picture>
-      <Card cardName="card-2-1" />
+      <Card cardName="card-2-1">
+        <Accardion title="Функціонал UX">
+          <AccardionItem text="Аккордеони та слайдери з анімаціями для інтерактивного UX" />
+        </Accardion>
+        <Accardion title="Технології">
+          <AccardionItem text="Аккордеони та слайдери з анімаціями для інтерактивного UX" />
+        </Accardion>
+        <Accardion title="Коментар замовника">
+          <AccardionItem text="Аккордеони та слайдери з анімаціями для інтерактивного UX" />
+        </Accardion>
+      </Card>
     </section>
   );
 }
