@@ -31,16 +31,16 @@ export default function Card({
     if (!emblaApi) return;
   }, [emblaApi]);
   return (
-    <div className="relative z-40 flex flex-col gap-8 p-2.5 border border-(--bg-btn) rounded-[20px] max-w-[350px] md:max-w-[701px] xl:flex-row xl:max-w-[1194px]">
-      <div className="relative overflow-hidden w-[332px] md:w-[670px] xl:w-[602px]" ref={emblaRef}>
+    <div className="relative z-40 flex flex-col gap-8 p-2.5 border border-(--bg-btn) rounded-[20px] max-w-[350px] md:max-w-[701px] xl:flex-row xl:max-w-[1194px] 2xl:max-w-[1436px]">
+      <div className="relative overflow-hidden w-[332px] md:w-[670px] xl:w-[602px] 2xl:w-[702px]" ref={emblaRef}>
         <div className="flex">
-          <div className="flex-[0_0_332px] flex justify-center items-center md:flex-[0_0_670px] xl:flex-[0_0_602px]">
+          <div className="flex-[0_0_332px] flex justify-center items-center md:flex-[0_0_670px] xl:flex-[0_0_602px] 2xl:flex-[0_0_702px]">
             <SlideItem cardName={cardName!} />
           </div>
-          <div className="flex-[0_0_332px] flex justify-center items-center md:flex-[0_0_670px] xl:flex-[0_0_602px]">
+          <div className="flex-[0_0_332px] flex justify-center items-center md:flex-[0_0_670px] xl:flex-[0_0_602px] 2xl:flex-[0_0_702px]">
             <SlideItem cardName={cardNameTwo!} />
           </div>
-          <div className="flex-[0_0_332px] flex justify-center items-center md:flex-[0_0_670px] xl:flex-[0_0_602px]">
+          <div className="flex-[0_0_332px] flex justify-center items-center md:flex-[0_0_670px] xl:flex-[0_0_602px] 2xl:flex-[0_0_702px]">
             <SlideItem cardName={cardNameThree!} />
           </div>
         </div>

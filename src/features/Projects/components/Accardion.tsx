@@ -5,8 +5,9 @@ import {
 } from "@headlessui/react";
 
 export default function Accardion({ title, children }: { title: string, children: React.ReactNode }) {
+  const isXL = typeof window !== "undefined" && window.innerWidth >= 1280;
   return (
-    <Disclosure>
+    <Disclosure defaultOpen={isXL}>
       {({ open }) => (
         <>
           <DisclosureButton className="flex items-center gap-2 cursor-pointer">
@@ -19,7 +20,7 @@ export default function Accardion({ title, children }: { title: string, children
               className={`w-4 h-4` + (open ? " transform rotate-180" : "")}
             />
           </DisclosureButton>
-          <DisclosurePanel className={"flex flex-col justify-center gap-2 p-3 mt-2"}>{children}</DisclosurePanel>
+          <DisclosurePanel className={"data-closed:hidden flex flex-col justify-center gap-2 p-3 mt-2"}>{children}</DisclosurePanel>
         </>
       )}
     </Disclosure>
