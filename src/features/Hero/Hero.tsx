@@ -14,7 +14,7 @@ export default function Hero() {
         preload="none"
         className="w-full h-full rounded-lg object-cover 2xl:max-h-[850px]"
       >
-        <source src="/hero.webm" type="video/webm" />
+        <source src="https://storage.googleapis.com/t-mebel/hero%20(1).webm" type="video/webm" />
       </video>
 
       <div className="absolute inset-0 flex flex-col gap-4 items-center justify-center">
