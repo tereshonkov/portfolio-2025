@@ -3,6 +3,8 @@ import Header from "./features/Header/Header";
 import Hero from "./features/Hero/Hero";
 import Service from "./features/Service/Service";
 import Projects from "./features/Projects/Projects";
+import About from "./features/About/About";
+import Footer from "./features/Footer/Footer";
 
 function App() {
   return (
@@ -12,7 +14,11 @@ function App() {
         <Hero />
         <Service />
         <Projects />
+        <About />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

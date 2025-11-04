@@ -2,7 +2,7 @@ export default function SlideItem({ cardName }: { cardName: string }) {
   return (
     <div className="relative rounded-[20px] overflow-hidden w-[332px] h-[250px] md:w-[670px] md:h-[553px] xl:w-[602px] xl:h-[789px] 2xl:w-[702px]">
       <picture>
-                <source
+        <source
           srcSet={`/projects/2xl/${cardName}.png`}
           media="(min-width: 1536px)"
         />
