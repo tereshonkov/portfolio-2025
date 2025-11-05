@@ -65,6 +65,7 @@ export default function Projects() {
         transition={{ duration: 1, delay: 0.8 }}
       >
         <Card
+          title="Landing Page для арбітражу трафіка"
           cardName="card-2-1"
           cardNameTwo="card-2-2"
           cardNameThree="card-2-3"

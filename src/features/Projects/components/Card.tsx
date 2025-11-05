@@ -2,12 +2,14 @@ import Button from "../../../components/Button/Button";
 import SliderCard from "./SliderCard";
 
 export default function Card({
+  title = "Web-сайт для меблевої фірми",
   cardName,
   cardNameTwo,
   cardNameThree,
   link,
   children,
 }: {
+  title?: string;
   cardName?: string;
   cardNameTwo?: string;
   cardNameThree?: string;
@@ -22,7 +24,7 @@ export default function Card({
         cardNameThree={cardNameThree}
       />
       <div className="flex flex-col gap-5">
-        <h3 className="font-bold text-[26px]">Web-сайт для меблевої фірми</h3>
+        <h3 className="font-bold text-[26px]">{title}</h3>
         {children}
         <div className="flex justify-center mt-4">
           <Button link={link}>ПЕРЕГЛЯНУТИ</Button>
