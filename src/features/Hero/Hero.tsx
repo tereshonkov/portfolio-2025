@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function Hero() {
+export default function Hero({ onLoad }: { onLoad?: () => void }) {
   return (
     <section
       id="home"
@@ -11,7 +11,8 @@ export default function Hero() {
         loop
         muted
         playsInline
-        preload="none"
+        preload="auto"
+        onLoadedData={onLoad}
         className="w-full h-full rounded-lg object-cover 2xl:max-h-[850px]"
       >
         <source src="https://storage.googleapis.com/t-mebel/hero%20(1).webm" type="video/webm" />
