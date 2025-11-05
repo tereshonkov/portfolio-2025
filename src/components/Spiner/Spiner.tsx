@@ -4,8 +4,8 @@ export default function Spiner() {
   return (
     <ThreeCircles
       visible={true}
-      height="400"
-      width="400"
+      height="200"
+      width="200"
       color="#6EFDFF"
       ariaLabel="three-circles-loading"
     />
