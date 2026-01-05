@@ -7,24 +7,24 @@ export default function Projects() {
       img: "/1.png",
       title: "WordPress Website",
       desc: "Сайт на WordPress для бізнесу",
+      link: "https://semenchenko-vladyslav.com",
     },
     {
       img: "/2.png",
       title: "Next.js Website",
       desc: "Сучасний сайт на Next.js",
+      link: "https://www.t-mebel.com.ua/",
     },
     {
       img: "/3.png",
       title: "Landing Page",
       desc: "Лендінг на Next.js",
+      link: "https://bogdan-poject.vercel.app/",
     },
   ];
 
   return (
     <Container>
-      <h2 className="font-semibold text-3xl uppercase text-center mt-12 tracking-wide text-white mb-8">
-        Останні проєкти
-      </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-center gap-8">
         {projects.map((project, idx) => (
           <div
