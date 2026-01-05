@@ -51,7 +51,7 @@ export default function Service() {
       </div>
       <div className="flex flex-col items-center mt-12 gap-6">
         <h3 className="font-semibold text-2xl">Не знаєш, що обрати?</h3>
-        <Button>Отримати консультацію</Button>
+        <Button link="#contacts">Отримати консультацію</Button>
       </div>
     </Container>
   );

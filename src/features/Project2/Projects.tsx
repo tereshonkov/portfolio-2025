@@ -40,7 +40,7 @@ export default function Projects() {
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 z-10">
-                <Button link="#">
+                <Button link={project.link}>
                   Переглянути проект
                 </Button>
               </div>

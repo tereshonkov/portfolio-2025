@@ -6,8 +6,13 @@ export default function Button({
   children: React.ReactNode;
 }) {
   if (link) {
+    const isAnchor = link.startsWith('#');
     return (
-      <a href={link} target="_blank" className="max-w-[285px] py-3 px-6 bg-(--bg-btn) flex justify-center items-center rounded-[20px] text-(--primary) hover:shadow-2xl shadow-indigo-500 cursor-pointer font-semibold">
+      <a
+        href={link}
+        {...(!isAnchor && { target: "_blank", rel: "noopener noreferrer" })}
+        className="max-w-[285px] py-3 px-6 bg-(--bg-btn) flex justify-center items-center rounded-[20px] text-(--primary) hover:shadow-2xl shadow-indigo-500 cursor-pointer font-semibold"
+      >
         {children}
       </a>
     );
