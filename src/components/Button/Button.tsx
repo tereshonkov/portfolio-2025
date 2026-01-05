@@ -7,13 +7,13 @@ export default function Button({
 }) {
   if (link) {
     return (
-      <a href={link} target="_blank" className="w-[295px] h-[86px] bg-(--bg-btn) flex justify-center items-center rounded-[20px] font-bold text-[22px] text-black xl:w-[225px] xl:h-20 xl:text-[18px] hover:shadow-2xl shadow-indigo-500 cursor-pointer">
+      <a href={link} target="_blank" className="max-w-[285px] py-3 px-6 bg-(--bg-btn) flex justify-center items-center rounded-[20px] text-(--primary) hover:shadow-2xl shadow-indigo-500 cursor-pointer font-semibold">
         {children}
       </a>
     );
   }
   return (
-    <button className="w-[295px] h-[86px] bg-(--bg-btn) flex justify-center items-center rounded-[20px] font-bold text-[22px] text-black xl:w-[225px] xl:h-20 xl:text-[18px] hover:shadow-2xl shadow-indigo-500 cursor-pointer">
+    <button className="max-w-[285px] py-3 px-6 bg-(--bg-btn) flex justify-center items-center rounded-[20px] text-black hover:shadow-2xl shadow-indigo-500 cursor-pointer font-semibold">
       {children}
     </button>
   );

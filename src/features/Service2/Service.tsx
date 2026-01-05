@@ -1,6 +1,7 @@
 import Container from "../../components/Container/Container";
 import { FaWordpress, FaReact, FaNode } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
+import Button from "../../components/Button/Button";
 
 export default function Service() {
   return (
@@ -26,6 +27,10 @@ export default function Service() {
           <h3 className="text-2xl font-bold">Node.js</h3>
           <p className="text-center">Розробка серверних додатків на Node.js</p>
         </div>
+      </div>
+      <div className="flex flex-col items-center mt-12 gap-6">
+        <h3 className="font-semibold text-2xl">Не знаєш, що обрати?</h3>
+        <Button>Отримати консультацію</Button>
       </div>
     </Container>
   );
